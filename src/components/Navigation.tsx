@@ -26,19 +26,19 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-brand transition-colors font-medium">
+            <Link href="/" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
               Home
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-brand transition-colors font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
               About
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-brand transition-colors font-medium">
+            <Link href="/services" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
               Services
             </Link>
-            <Link href="/collaborations" className="text-gray-700 hover:text-brand transition-colors font-medium">
+            <Link href="/collaborations" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
               Collaborations
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-brand transition-colors font-medium">
+            <Link href="/contact" className="text-gray-700 hover:text-brand transition-colors font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-brand after:transition-all after:duration-300 hover:after:w-full">
               Contact
             </Link>
           </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,8 +12,9 @@ export default function Footer() {
             <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
               <div>
                 <p className="font-semibold text-gray-900">Surat HQ</p>
-                <p>806, Rajhans Montessa, Airport Road,</p>
-                <p>Surat - 395007</p>
+                <p>806, Rajhans Montessa,</p>
+                <p>Opp. Le Meridien Hotel, Surat Dumas Road,</p>
+                <p>Surat 395007, GJ, IN</p>
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Mumbai Office</p>
@@ -31,13 +32,22 @@ export default function Footer() {
             <p className="text-gray-700 text-sm">🌐 www.thinknorth.co.in</p>
             <div className="mt-4">
               <p className="font-semibold text-gray-900 mb-2">Follow us on</p>
-              <a
-                href="#"
-                className="inline-flex items-center text-brand hover:text-brand-dark transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
+              <div className="flex gap-4">
+                <a
+                  href="#"
+                  className="inline-flex items-center text-brand hover:text-brand-dark transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={20} />
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center text-brand hover:text-brand-dark transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram size={20} />
+                </a>
+              </div>
             </div>
           </div>
 

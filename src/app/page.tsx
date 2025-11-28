@@ -21,12 +21,12 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="text-sm mb-4">Think North Services LLP.</div>
+                <div className="text-sm mb-4">Think North Services</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  EMPOWERING<br />FINANCIAL SUCCESS FOR<br />OVER 15 YEARS
+                  Precision-Driven Financial Strategies for Corporates & HNIs
                 </h1>
                 <p className="text-brand-lighter mb-8 leading-relaxed">
-                  Think North Services LLP. has been trusted specialists of financial operations, consulting, outsourced management accounting, strategic advisory, governance & optimization, compliance, and assurance services to businesses & start-ups.
+                  Think North is your partner for next-generation finance, accounting, and strategic advisory solutions. With expertise in global markets, compliance, and digital transformation, trusted by top business leaders, our commitment lies in delivering clarity, compliance, and sustainable growth, helping you navigate financial complexities with confidence and precision.
                 </p>
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
@@ -55,10 +55,11 @@ export default function Home() {
         <div className="bg-white border-y border-gray-200 py-4">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-8 text-sm font-semibold text-gray-700">
-              <div>🎯 PROJECT FINANCE & BOOKKEEPING</div>
-              <div>💼 TRUSTED AUDIT & ASSURANCE SERVICES</div>
-              <div>📊 ACCOUNTING, FINANCIAL CONSULTING FOR GROWTH</div>
-              <div>💰 EXPERT GST & INDIRECT TAX</div>
+              <div>★ Global Tax Structuring & Compliance Advisory</div>
+              <div>★ Seamless Fundraising & Capital Solutions</div>
+              <div>★ Advanced Internal Audits for Risk-Free Growth</div>
+              <div>★ Institutional-Grade Financial Reporting</div>
+              <div>★ Dedicated NRI & International Investment Support</div>
             </div>
           </div>
         </div>
@@ -69,8 +70,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR SERVICES</h2>
               <p className="text-gray-600">
-                We offer comprehensive strategic expertise tailored to help you<br />
-                grow, comply, and lead in your industry.
+                Experience a comprehensive range of solutions tailored for modern businesses and discerning individuals:
               </p>
             </div>
 
@@ -78,13 +78,13 @@ export default function Home() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
                   src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
-                  alt="Financial Operations"
+                  alt="Global Services"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Financial Operations</h3>
+                  <h3 className="font-bold text-lg mb-3">Global Services – Corporates & HNIs</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    We provide end-to-end financial operations support that helps you stay focused on your business...
+                    Sophisticated tax, structuring, and cross-border compliance solutions for growth-focused corporates and discerning HNIs.
                   </p>
                   <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
@@ -95,13 +95,13 @@ export default function Home() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
-                  alt="Strategic Advisory"
+                  alt="Finance & Accounting"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Strategic Advisory</h3>
+                  <h3 className="font-bold text-lg mb-3">Finance & Accounting Solutions</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Our strategic advisory services help you navigate complex business challenges...
+                    Streamlined systems and expert reporting that deliver clarity, control, and compliance, every quarter.
                   </p>
                   <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
@@ -112,13 +112,13 @@ export default function Home() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
-                  alt="Governance & Optimization"
+                  alt="Fundraising & Advisory"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Governance & Optimization</h3>
+                  <h3 className="font-bold text-lg mb-3">Fundraising, Capital Advisory & Financial Writing</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    We help you ensure robust governance and optimize your business operations...
+                    Capital strategy, fundraising support, and investor-grade documentation for businesses at every stage.
                   </p>
                   <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
@@ -129,13 +129,13 @@ export default function Home() {
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop"
-                  alt="Audit & Compliance"
+                  alt="Audit & Diligence"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Audit & Compliance</h3>
+                  <h3 className="font-bold text-lg mb-3">Internal Audit, Due Diligence & Litigation</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Our audit and compliance services ensure your business meets regulatory standards...
+                    Deep-dive audits, robust diligence, and regulatory guidance to protect value and ensure governance excellence.
                   </p>
                   <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
@@ -220,44 +220,40 @@ export default function Home() {
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">MEET THE TEAM</h2>
-              <p className="text-gray-600">Meet the people behind your financial clarity.</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">LEADERSHIP WITH VISION</h2>
+              <p className="text-gray-600">
+                Think North is helmed by visionary Chartered Accountants and finance experts with over 12 years’ global advisory experience. Our founders combine deep technical knowledge with hands-on industry insight, setting high standards of integrity, client focus, and strategic innovation.
+              </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
               <Card className="overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop"
-                  alt="CA. Krunal Bhagat"
+                  alt="Vardhan Shah"
                   className="w-full h-80 object-cover"
                 />
                 <div className="p-6 text-center">
-                  <h3 className="font-bold text-lg mb-1">CA. KRUNAL BHAGAT</h3>
-                  <p className="text-gray-600 text-sm">Principal</p>
+                  <h3 className="font-bold text-lg mb-1">Vardhan Shah</h3>
+                  <p className="text-gray-600 text-sm mb-2">CEO</p>
+                  <p className="text-gray-500 text-xs">
+                    International tax expert, IFRS specialist, and recognized for pioneering digital finance solutions.
+                  </p>
                 </div>
               </Card>
 
               <Card className="overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop"
-                  alt="Bhavesh Shah"
+                  alt="Co-Founder"
                   className="w-full h-80 object-cover"
                 />
                 <div className="p-6 text-center">
-                  <h3 className="font-bold text-lg mb-1">BHAVESH SHAH</h3>
-                  <p className="text-gray-600 text-sm">Partner</p>
-                </div>
-              </Card>
-
-              <Card className="overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
-                  alt="CA. Shivani Mehta"
-                  className="w-full h-80 object-cover"
-                />
-                <div className="p-6 text-center">
-                  <h3 className="font-bold text-lg mb-1">CA. SHIVANI MEHTA</h3>
-                  <p className="text-gray-600 text-sm">Chartered Accountant / Audit & Advisory</p>
+                  <h3 className="font-bold text-lg mb-1">Co-Founder</h3>
+                  <p className="text-gray-600 text-sm mb-2">Strategic Head</p>
+                  <p className="text-gray-500 text-xs">
+                    Renowned for cross-border investment structuring and compliance leadership.
+                  </p>
                 </div>
               </Card>
             </div>
@@ -274,8 +270,8 @@ export default function Home() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR ESTEEMED CLIENTS</h2>
-              <p className="text-gray-600">Trusted by Businesses That Trust Numbers</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">OUR CLIENTS</h2>
+              <p className="text-gray-600">Trusted by industry leaders, visionary founders, and global decision-makers</p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center mb-12">
@@ -301,7 +297,7 @@ export default function Home() {
 
             <div className="text-center">
               <p className="text-sm text-gray-600 mb-6">
-                Here are just a few of the businesses partnering with ThinkNorth Services LLP for clarity and growth.
+                Here are just a few of the businesses partnering with ThinkNorth Services for clarity and growth.
               </p>
               <Link
                 href="/collaborations"
@@ -317,28 +313,23 @@ export default function Home() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">VOICES OF TRUST & RESULTS</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">NATIONAL AND INTERNATIONAL RESULTS</h2>
               <p className="text-gray-600">
                 Our commitment to excellence reflects in the feedback we receive.<br />
                 Here's what some of our clients have to say.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
               <Card className="p-6">
                 <div className="flex gap-4 mb-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&h=200&fit=crop"
-                    alt="Client building"
-                    className="w-24 h-24 object-cover rounded"
-                  />
                   <div className="flex-1">
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      ThinkNorth Services LLP has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management. Their expertise and professionalism have been invaluable to Short Amusement Ltd.
+                    <p className="text-gray-700 text-sm leading-relaxed italic">
+                      "Think North streamlined our international expansion, ensuring seamless compliance and measurable savings."
                     </p>
                     <div className="mt-4">
-                      <div className="font-bold">Mr. James John</div>
-                      <div className="text-sm text-gray-600">CEO, Short Amusement Ltd</div>
+                      <div className="font-bold">CFO</div>
+                      <div className="text-sm text-gray-600">Indian Tech Exporter</div>
                     </div>
                   </div>
                 </div>
@@ -346,27 +337,31 @@ export default function Home() {
 
               <Card className="p-6">
                 <div className="flex gap-4 mb-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop"
-                    alt="Client building"
-                    className="w-24 h-24 object-cover rounded"
-                  />
                   <div className="flex-1">
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      ThinkNorth Services LLP has been our go-to partner for CA services specializing in accounting, tax filing and compliance. Their expertise and attention to detail have been exceptional.
+                    <p className="text-gray-700 text-sm leading-relaxed italic">
+                      "Their team’s expertise in audit and capital raising enabled our SME-IPO journey with confidence."
                     </p>
                     <div className="mt-4">
-                      <div className="font-bold">CA Adesh Mehta</div>
-                      <div className="text-sm text-gray-600">Group CFO, K. Ghelawala Group</div>
+                      <div className="font-bold">Promoter</div>
+                      <div className="text-sm text-gray-600">Manufacturing Group</div>
                     </div>
                   </div>
                 </div>
               </Card>
-            </div>
 
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">WORDS THAT COUNT MORE THAN NUMBERS</h3>
-              <p className="text-gray-600 mb-8">These are just a few of the voices behind the numbers.</p>
+              <Card className="p-6">
+                <div className="flex gap-4 mb-4">
+                  <div className="flex-1">
+                    <p className="text-gray-700 text-sm leading-relaxed italic">
+                      "Professional, insightful, and always accessible, the Think North difference is unmatched."
+                    </p>
+                    <div className="mt-4">
+                      <div className="font-bold">NRI Client</div>
+                      <div className="text-sm text-gray-600">UK</div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
         </section>
@@ -382,7 +377,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-[rgba(75,39,100,0.8)]"></div>
           </div>
           <div className="relative max-w-4xl mx-auto px-4 text-center text-white">
-            <h2 className="text-4xl font-bold mb-6">BIG OR SMALL,<br />FINANCIAL GOALS DESERVE THE RIGHT PARTNER</h2>
+            <h2 className="text-4xl font-bold mb-6">Thinking of numbers?<br />Think North.</h2>
             <Link
               href="/contact"
               className="inline-block bg-brand-dark text-white px-8 py-3 rounded font-semibold hover:bg-brand transition-colors"
