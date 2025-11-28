@@ -17,11 +17,11 @@
 
 :root {
   --radius: 0.375rem;
-  --brand: #7c4f9f;
-  --brand-dark: #5f367b;
-  --brand-darker: #4b2764;
-  --brand-light: #d8c1ec;
-  --brand-lighter: #f2e8fb;
+  --brand: #931ee2;
+  --brand-dark: #7618b5;
+  --brand-darker: #581288;
+  --brand-light: #d3a4f4;
+  --brand-lighter: #f4e4fc;
   --background: #ffffff;
   --foreground: #1f1d29;
   --card: #ffffff;
