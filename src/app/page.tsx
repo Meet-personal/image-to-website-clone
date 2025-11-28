@@ -165,7 +165,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">VALUE PROPOSITION</h2>
                 <p className="text-lg font-semibold text-gray-900 mb-6">Your Strategic Partner</p>
-                
+
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
@@ -176,7 +176,7 @@ export default function Home() {
                       To become the most trusted and forward-thinking Chartered Accountancy firm, offering strategic solutions that fuel growth and success for every business we work with.
                     </p>
                   </div>
-                  
+
                   <div>
                     <h3 className="font-bold text-gray-900 mb-2 flex items-start">
                       <span className="text-brand mr-2">➜</span>
@@ -211,58 +211,61 @@ export default function Home() {
         </section>
 
         {/* Meet the Team */}
-        <motion.section 
+        <motion.section
           ref={teamRef}
           initial={{ opacity: 0, y: 60 }}
           animate={teamInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="py-20 bg-gray-200"
+          className="py-20 bg-white"
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* Text column */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">MEET THE TEAM</h2>
-                <p className="text-gray-600 mb-6">
-                  The minds behind the numbers - Experienced, Enthusiastic, Client-Focused.
-                </p>
-              </div>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">MEET THE TEAM</h2>
+              <p className="text-gray-600">Meet the people behind your financial clarity.</p>
+            </div>
 
-              {/* Cards column - styled like services */}
-              <div className="grid sm:grid-cols-3 gap-6">
-                {[
-                  {
-                    name: "CA. KRUNAL BHAGAT",
-                    role: "Principal",
-                    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
-                  },
-                  {
-                    name: "BHAVESH SHAH",
-                    role: "Partner",
-                    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop"
-                  },
-                  {
-                    name: "CA. SHIVANI MEHTA",
-                    role: "Chartered Accountant / Audit & Advisory",
-                    image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=500&fit=crop"
-                  }
-                ].map((member) => (
-                  <Card
-                    key={member.name}
-                    className="overflow-hidden hover:shadow-lg transition-shadow"
-                  >
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-6">
-                      <h3 className="font-bold text-lg mb-3">{member.name}</h3>
-                      <p className="text-gray-600 text-sm">{member.role}</p>
-                    </div>
-                  </Card>
-                ))}
-              </div>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <Card className="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop"
+                  alt="CA. Krunal Bhagat"
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-6 text-center">
+                  <h3 className="font-bold text-lg mb-1">CA. KRUNAL BHAGAT</h3>
+                  <p className="text-gray-600 text-sm">Principal</p>
+                </div>
+              </Card>
+
+              <Card className="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop"
+                  alt="Bhavesh Shah"
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-6 text-center">
+                  <h3 className="font-bold text-lg mb-1">BHAVESH SHAH</h3>
+                  <p className="text-gray-600 text-sm">Partner</p>
+                </div>
+              </Card>
+
+              <Card className="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
+                  alt="CA. Shivani Mehta"
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-6 text-center">
+                  <h3 className="font-bold text-lg mb-1">CA. SHIVANI MEHTA</h3>
+                  <p className="text-gray-600 text-sm">Chartered Accountant / Audit & Advisory</p>
+                </div>
+              </Card>
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <p className="text-gray-700 text-center leading-relaxed">
+                At Think North Services LLP., our team brings a strategic edge to every engagement, combining technical knowledge with first-hand business expertise. From accounting to business building and operations, we approach every project with both precision and purpose, ensuring that our clients receive more than just service—they earn a trusted financial partner.
+              </p>
             </div>
           </div>
         </motion.section>

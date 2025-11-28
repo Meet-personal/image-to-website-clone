@@ -63,7 +63,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-300 pt-6 text-center">
           <p className="text-gray-700 text-sm font-medium">
-            Think North Services LLP. - ALL RIGHTS RESERVED
+            Think North Services LLP.
+          </p>
+          <p className="text-gray-500 text-sm mt-2">
+            Design and Developed by <a href="https://codemario.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">Codemario</a>
           </p>
         </div>
       </div>
