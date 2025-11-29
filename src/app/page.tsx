@@ -8,6 +8,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import ServicesMarquee from "@/components/ServicesMarquee";
+import HeroImageSlider from "@/components/HeroImageSlider";
 
 export default function Home() {
   const teamRef = useRef(null);
@@ -17,10 +18,30 @@ export default function Home() {
       <Navigation />
       <main>
         {/* Hero Section */}
-        <section className="gradient-blue text-white py-20 relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
+        {/* Hero Section */}
+        <section className="relative h-[600px] md:h-[700px] overflow-hidden bg-gray-900">
+          {/* Background Image Slider (Right Side / Full) */}
+          <div className="absolute inset-0 w-full h-full">
+            <HeroImageSlider />
+          </div>
+
+          {/* Blue Gradient Overlay with Angled Clip */}
+          <div
+            className="absolute inset-0 gradient-blue"
+            style={{ clipPath: "polygon(0 0, 70% 0, 55% 100%, 0 100%)" }}
+          >
+            {/* Overlay content container to match grid if needed, or just padding */}
+          </div>
+
+          {/* Content Container */}
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center w-full">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="text-white z-10 max-w-xl"
+              >
                 <div className="text-sm mb-4">Your compass to financial needs</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   Navigating Finance with northern precision
@@ -31,22 +52,18 @@ export default function Home() {
                 <button className="bg-white text-brand px-6 py-3 rounded font-semibold hover:bg-[#f7efff] transition-colors">
                   CONNECT NOW ➔
                 </button>
-                {/* <div className="mt-6 flex items-center gap-4">
+                <div className="mt-6 flex items-center gap-4">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <span key={star} className="text-yellow-400">★</span>
                     ))}
                   </div>
                   <span className="text-sm">5/5 rated by businesses</span>
-                </div> */}
-              </div>
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop"
-                  alt="Financial professionals"
-                  className="rounded-lg shadow-2xl"
-                />
-              </div>
+                </div>
+              </motion.div>
+
+              {/* Right side is empty to show the image */}
+              <div></div>
             </div>
           </div>
         </section>

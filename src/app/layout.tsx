@@ -5,7 +5,7 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 import SmoothScroll from "@/components/SmoothScroll";
-import Preloader from "@/components/Preloader";
+import CompassPreloader from "@/components/CompassPreloader";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CallButton from "@/components/CallButton";
 
@@ -38,7 +38,7 @@ export default function RootLayout({
         {children}
         <VisualEditsMessenger />
         <SmoothScroll />
-        <Preloader />
+        <CompassPreloader />
         <WhatsAppButton />
         <CallButton />
       </body>
