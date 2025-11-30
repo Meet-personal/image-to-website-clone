@@ -25,7 +25,7 @@ export default function CompassPreloader() {
                     <div className="relative w-40 h-40 flex items-center justify-center">
                         {/* Compass Ring */}
                         <motion.div
-                            className="absolute inset-0 border-4 border-gray-200 rounded-full"
+                            className="absolute inset-0 border-4 border-gray-200 rounded-full bg-gray-100"
                             initial={{ scale: 0, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
@@ -57,6 +57,30 @@ export default function CompassPreloader() {
                                 times: [0, 0.2, 0.4, 0.6, 0.8, 1], // Control pacing
                             }}
                         >
+                            {/* Smoke Particles - Appear on Exit */}
+                            <motion.g
+                                initial={{ opacity: 0 }}
+                                exit={{ opacity: 1 }}
+                            >
+                                {[...Array(6)].map((_, i) => (
+                                    <motion.circle
+                                        key={i}
+                                        cx="50"
+                                        cy="80"
+                                        r="4"
+                                        fill="#d8b4fe"
+                                        initial={{ opacity: 0, scale: 0 }}
+                                        exit={{
+                                            opacity: [0.8, 0],
+                                            y: [0, 40 + Math.random() * 20],
+                                            x: [(i - 2.5) * 10, (i - 2.5) * 20],
+                                            scale: [1, 2],
+                                            transition: { duration: 0.6, ease: "easeOut" }
+                                        }}
+                                    />
+                                ))}
+                            </motion.g>
+
                             <motion.div
                                 className="relative w-full h-full flex items-center justify-center"
                                 exit={{
@@ -69,13 +93,34 @@ export default function CompassPreloader() {
                                     width="80"
                                     height="80"
                                     viewBox="0 0 100 100"
-                                    className="transform -translate-y-1" // Slight adjustment to center visually
+                                    className="transform -translate-y-1 overflow-visible" // Allow smoke to go outside
                                 >
                                     {/* Left Half - Gray */}
                                     <path d="M50 10 L20 90 L50 75 Z" fill="#4b5563" />
 
                                     {/* Right Half - Purple */}
                                     <path d="M50 10 L80 90 L50 75 Z" fill="#931ee2" />
+
+                                    {/* Smoke Particles inside the SVG for correct positioning relative to rotation */}
+                                    <motion.g initial={{ opacity: 0 }} exit={{ opacity: 1 }}>
+                                        {[...Array(5)].map((_, i) => (
+                                            <motion.circle
+                                                key={i}
+                                                cx="50"
+                                                cy="85"
+                                                r={3 + Math.random() * 2}
+                                                fill="#e9d5ff"
+                                                initial={{ opacity: 0 }}
+                                                exit={{
+                                                    opacity: [0, 0.8, 0],
+                                                    cy: [85, 120 + Math.random() * 30],
+                                                    cx: [50, 50 + (Math.random() - 0.5) * 40],
+                                                    scale: [0.5, 2],
+                                                    transition: { duration: 0.6, ease: "easeOut" }
+                                                }}
+                                            />
+                                        ))}
+                                    </motion.g>
                                 </svg>
                             </motion.div>
                         </motion.div>
