@@ -20,28 +20,14 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         {/* Hero Section */}
-        <section className="relative h-[600px] md:h-[700px] overflow-hidden bg-gray-900">
-          {/* Background Image Slider (Right Side / Full) */}
-          <div className="absolute inset-0 w-full h-full">
-            <HeroImageSlider />
-          </div>
-
-          {/* Blue Gradient Overlay with Angled Clip */}
-          <div
-            className="absolute inset-0 gradient-blue"
-            style={{ clipPath: "polygon(0 0, 70% 0, 55% 100%, 0 100%)" }}
-          >
-            {/* Overlay content container to match grid if needed, or just padding */}
-          </div>
-
-          {/* Content Container */}
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-            <div className="grid md:grid-cols-2 gap-12 items-center w-full">
+        {/* Hero Section */}
+        <section className="gradient-blue text-white py-20 relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-white z-10 max-w-xl"
               >
                 <div className="text-sm mb-4">Your compass to financial needs</div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -63,8 +49,10 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              {/* Right side is empty to show the image */}
-              <div></div>
+              {/* Right Side Slider */}
+              <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-2xl">
+                <HeroImageSlider />
+              </div>
             </div>
           </div>
         </section>
@@ -85,14 +73,14 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
-                  alt="Global Services"
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
+                  alt="Finance & Accounting"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Global Services – Corporates & HNIs</h3>
+                  <h3 className="font-bold text-lg mb-3">Finance & Accounting Solutions</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Sophisticated tax, structuring, and cross-border compliance solutions for growth-focused corporates and discerning HNIs.
+                    Streamlined systems and expert reporting that deliver clarity, control, and compliance, every quarter.
                   </p>
                   <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
@@ -102,14 +90,14 @@ export default function Home() {
 
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop"
-                  alt="Finance & Accounting"
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop"
+                  alt="Global Services"
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="font-bold text-lg mb-3">Finance & Accounting Solutions</h3>
+                  <h3 className="font-bold text-lg mb-3">Global Services – Corporates & HNIs</h3>
                   <p className="text-gray-600 text-sm mb-4">
-                    Streamlined systems and expert reporting that deliver clarity, control, and compliance, every quarter.
+                    Sophisticated tax, structuring, and cross-border compliance solutions for growth-focused corporates and discerning HNIs.
                   </p>
                   <Link href="/services" className="text-brand font-semibold hover:text-brand-dark transition-colors">
                     KNOW MORE ➔
