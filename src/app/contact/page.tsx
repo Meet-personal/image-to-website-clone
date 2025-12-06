@@ -63,23 +63,36 @@ export default function Contact() {
                 <p className="text-brand-lighter mb-8 leading-relaxed">
                   ThinkNorth Services LLP blends strategic finance, compliance, and technology to guide ambitious teams with clarity. Let’s design clearer paths for growth from Surat to Mumbai and beyond.
                 </p>
-                <div className="space-y-4">
-                  {contactChannels.map((channel) => (
-                    <div key={channel.label} className="flex items-start gap-3">
-                      <span className="text-2xl">{channel.icon}</span>
-                      <div>
-                        <div className="font-semibold">{channel.label}:</div>
-                        <a
-                          href={channel.href}
-                          className="text-brand-lighter hover:text-white transition-colors"
-                          target={channel.href.startsWith("http") ? "_blank" : undefined}
-                          rel={channel.href.startsWith("http") ? "noreferrer" : undefined}
-                        >
-                          {channel.value}
-                        </a>
-                      </div>
+                <div className="space-y-6 mt-8">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
+                      <span className="text-2xl">🚀</span>
                     </div>
-                  ))}
+                    <div>
+                      <h3 className="font-semibold text-white">Growth-Ready Advisory</h3>
+                      <p className="text-brand-lighter text-sm">Strategic guidance for startups and SMEs</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
+                      <span className="text-2xl">🛡️</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-white">Compliance Excellence</h3>
+                      <p className="text-brand-lighter text-sm">Dependable tax and regulatory support</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
+                      <span className="text-2xl">💡</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-white">Tech-Forward Solutions</h3>
+                      <p className="text-brand-lighter text-sm">Modern tools for financial clarity</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="relative">
