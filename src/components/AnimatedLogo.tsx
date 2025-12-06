@@ -15,7 +15,7 @@ export default function AnimatedLogo() {
                 className="relative"
             >
                 <Image
-                    src="/thinknorth-logo.png"
+                    src="/TN Logo-02.png"
                     alt="ThinkNorth Services LLP"
                     width={185}
                     height={45}
