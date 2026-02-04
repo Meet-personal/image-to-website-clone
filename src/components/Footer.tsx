@@ -26,9 +26,15 @@ export default function Footer() {
           {/* Contacts */}
           <div>
             <h3 className="font-bold text-gray-900 mb-4">Contact Us</h3>
-            <p className="text-gray-700 text-sm mb-2">📞 +91 80000 98089</p>
-            <p className="text-gray-700 text-sm mb-2" >✉️ vardhan@thinknorth.co.in</p>
-            <p className="text-gray-700 text-sm">🌐 www.thinknorth.co.in</p>
+            <p className="text-gray-700 text-sm mb-2">
+              <a href="tel:+918000098089" className="hover:text-brand transition-colors">📞 +91 80000 98089</a>
+            </p>
+            <p className="text-gray-700 text-sm mb-2">
+              <a href="mailto:vardhan@thinknorth.co.in" className="hover:text-brand transition-colors">✉️ vardhan@thinknorth.co.in</a>
+            </p>
+            <p className="text-gray-700 text-sm">
+              <a href="https://www.thinknorth.co.in" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">🌐 www.thinknorth.co.in</a>
+            </p>
             <div className="mt-4">
               <p className="font-semibold text-gray-900 mb-2">Follow us on</p>
               <div className="flex gap-4">

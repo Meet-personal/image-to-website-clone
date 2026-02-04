@@ -8,6 +8,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
 import ClientLogos from "@/components/ClientLogos";
 import ServicesMarquee from "@/components/ServicesMarquee";
+import Testimonials from "@/components/Testimonials";
 
 const contactChannels = [
   {
@@ -345,58 +346,7 @@ export default function Contact() {
         />
 
         {/* Testimonials */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">VOICES OF TRUST & RESULTS</h2>
-              <p className="text-gray-600">
-                Our commitment to excellence reflects in the feedback we receive.<br />
-                Here's what some of our clients have to say.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="p-6">
-                <div className="flex gap-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&h=200&fit=crop"
-                    alt="Client building"
-                    className="w-24 h-24 object-cover rounded"
-                  />
-                  <div className="flex-1">
-                    <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                      K P Bhagat & Co has been our trusted accounting & tax advisory company for the last 2 years. We've been highly impressed by their financial management. Their expertise and professionalism have been invaluable to Short Amusement Ltd.
-                    </p>
-                    <div className="font-bold">Mr. James John</div>
-                    <div className="text-sm text-gray-600">CEO, Short Amusement Ltd</div>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <div className="flex gap-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop"
-                    alt="Client building"
-                    className="w-24 h-24 object-cover rounded"
-                  />
-                  <div className="flex-1">
-                    <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                      K P Bhagat & Co has been our go-to partner for CA services specializing in accounting, tax filing and compliance. Their expertise and attention to detail have been exceptional.
-                    </p>
-                    <div className="font-bold">CA Adesh Mehta</div>
-                    <div className="text-sm text-gray-600">Group CFO, K. Ghelawala Group</div>
-                  </div>
-                </div>
-              </Card>
-            </div>
-
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">WORDS THAT COUNT MORE THAN NUMBERS</h3>
-              <p className="text-gray-600">These are just a few of the voices behind the numbers.</p>
-            </div>
-          </div>
-        </section>
+        <Testimonials />
       </main>
       <Footer />
       <WhatsAppButton />
