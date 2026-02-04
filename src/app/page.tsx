@@ -108,7 +108,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
+                <br/>
                 <Link
                   href="/about"
                   className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
