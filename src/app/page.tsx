@@ -108,7 +108,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <br/>
+                <br />
                 <Link
                   href="/about"
                   className="inline-block bg-brand text-white px-8 py-3 rounded font-semibold hover:bg-brand-dark transition-colors"
@@ -125,7 +125,7 @@ export default function Home() {
                 />
                 <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-brand-dark text-white p-4 sm:p-6 rounded-lg shadow-xl">
                   <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">20+</div>
-                  <div className="text-xs sm:text-sm">Happy Accountants</div>
+                  <div className="text-xs sm:text-sm">Clients</div>
                   <div className="mt-2 sm:mt-4 text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">15</div>
                   <div className="text-xs sm:text-sm">Years of experience</div>
                 </div>

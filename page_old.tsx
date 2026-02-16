@@ -201,7 +201,7 @@ export default function Home() {
                 />
                 <div className="absolute bottom-6 right-6 bg-brand-dark text-white p-6 rounded-lg shadow-xl">
                   <div className="text-4xl font-bold mb-2">20+</div>
-                  <div className="text-sm">Happy Accountants</div>
+                  <div className="text-sm">Clients</div>
                   <div className="mt-4 text-4xl font-bold mb-2">15</div>
                   <div className="text-sm">Years of experience</div>
                 </div>
